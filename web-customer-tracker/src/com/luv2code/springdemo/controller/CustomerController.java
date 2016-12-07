@@ -32,4 +32,16 @@ public class CustomerController {
 		
 		return "list-customers";
 	}
+	
+	@GetMapping("/showFormForAdd")
+	public String showFormForAdd(Model theModel) {
+		
+		// get customers from the dao
+//		List<Customer> theCustomers = customerService.addCustomers();
+//		
+//	    // add the customers to the model
+//		theModel.addAttribute("customers", theCustomers);
+		
+		return "customer-form";
+	}
 }
